@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100v-mix;
+    width: auto;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav {
+    height: 2.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: -2.5rem;
+    padding-left: 1rem;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-right: -2rem;
+    padding-left: 3rem;
+}
+
+.msgnotif {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+    align-self:baseline;
+    position: relative;
+    right: 1.6rem;
+}
+
+.msgnotif span {
+    font-size: 9px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Device {
+    height: 100vh;
+    width: 350px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.storiesHolder {
+    height: 6rem;
+    border-bottom: 1px solid #dadada;
+    padding: 0.5rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.storiesHolder::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    margin-right: 0.55rem;
+
+}
+
+.storiesHolder img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.storyfullscreen {
+    height: 100%;
+    width: 99%;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.allposts {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.allposts::-webkit-scrollbar {
+    display: none;
+}
+
+.posts {
+    height: 60vh;
+    width: auto;
+    background-color: rgb(232, 16, 16);
+    border-radius: 2vh;
+    margin-bottom: 0.10rem;
+    border-bottom: 0.80px solid black;
+}
+
+.posts img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vh;
+
+}
+
+#js-heart{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%) Scale(0);
+        font-size: 2.8rem;
+        color: rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width:370px) {
+    .msgnotif {
+
+        left: 88vw;
+    }
+}
